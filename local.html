@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="sweetalert2.all.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>local storange</title>
+</head>
+<body>
+    
+    <main class="container">
+
+        <h1 class="mt-4">TODO APP</h1>
+
+        <form id="formulario">
+
+            <input type="text" class="form-control mb-3" placeholder="Ingresa un todo" name="nombre" autocomplete="off">
+
+            <button class="btn btn-outline-primary w-100" type="submit">Agregar</button>
+
+        </form>
+
+        <section id="mostrar" class="my-3">
+        </section>
+
+    </main>
+    
+    <template id="template">
+        <article class="alert d-flex alert-warning align-self-center justify-content-between">
+    
+            <p class="lead mb-0">TODO</p>
+    
+            <div>
+                <button class="btn btn-danger">Eliminar</button>
+            </div>
+    
+        </article>
+    </template>
+
+    <script src="storange.js"></script>
+</body>
+</html>
